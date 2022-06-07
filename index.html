@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js" defer ></script>
+        <script src="./controller/TodosController.js" defer></script>
+        <script src="./model/TodosCollection.js" defer></script>
+        <script src="./view/TodosListView.js" defer></script>
+        <script src="./app.js" defer></script>
+        <title>HW21</title>
+    </head>
+    <body>
+        <div class="container">
+            <form id="addTaskForm">
+                <div class="row">
+                    <div class="ten columns">
+                        <input
+                            type="text"
+                            name="title"
+                            id="taskNameInput"
+                            class="u-full-width"
+                        />
+                        <span id="errorContainer" class="error hidden"></span>
+                    </div>
+                    <div class="two columns">
+                        <button type="submit" id="addBtn" class="u-full-width">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <script type="text/template" id="taskItemTemplate">
+                <div class="task-item u-full-width {{doneClass}}" data-id="{{id}}">
+                    {{title}}
+                    <span class="delete-btn">✘</span>
+                </div>
+            </script> -->
+        </div>
+    </body>
+</html>
