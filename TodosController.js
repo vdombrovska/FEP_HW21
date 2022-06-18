@@ -3,6 +3,7 @@ class TodosController {
         this._todosListView = new TodosListView({
             onToggle: (id) => this.toggleTodo(id),
             onDelete: (id) => this.removeTodo(id),
+            onAdd : (newTodo) => this.addTOdo (newTodo),
         });
 
         $container.append(this._todosListView.$el);
