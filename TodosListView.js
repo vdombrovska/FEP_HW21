@@ -21,12 +21,6 @@ class TodosListView {
         );
     }
 
-        
-    static addTodo (val){
-       $('#addBtn').on('click', onAddNoteBtnClick);
-       this.todo.title= $("input:text").val();
-    }
-     
     constructor(config = {}) {
         this.$el = $(TodosListView.LIST_TEMPLATE)
             .on(
